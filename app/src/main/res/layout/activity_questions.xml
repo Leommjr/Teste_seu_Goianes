@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Questions">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="183dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/quest_o_1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="318dp"
+        android:layout_height="165dp"
+        android:text="@string/aqui_fica_a_descri_o_da_quest_o"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="304dp"
+        android:text="@string/alternativa_1"
+        android:textColor="@color/title"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="220dp"
+        android:text="@string/alternativa_2"
+        android:textColor="@color/title"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="136dp"
+        android:text="@string/alternativa_3"
+        android:textColor="@color/title"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/alternativa_4"
+        android:textColor="@color/title"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

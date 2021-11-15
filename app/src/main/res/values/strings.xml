@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Teste seu Goianes</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="parab_ns">Parabéns</string>
+    <string name="voc_obteve">Você Obteve:</string>
+    <string name="_0">0</string>
+    <string name="acertos">Acertos!</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="quest_o_1">Questão 1</string>
+    <string name="aqui_fica_a_descri_o_da_quest_o">Aqui fica a descrição da questão</string>
+    <string name="alternativa_1">Alternativa 1</string>
+    <string name="alternativa_2">Alternativa 2</string>
+    <string name="alternativa_3">Alternativa 3</string>
+    <string name="alternativa_4">Alternativa 4</string>
+</resources>
