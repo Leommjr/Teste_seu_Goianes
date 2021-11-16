@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 
-class Fim : AppCompatActivity() {
+class FimActivity : AppCompatActivity() {
     private lateinit var acerts: TextView
     private lateinit var reiniciar: Button
 
@@ -24,9 +24,16 @@ class Fim : AppCompatActivity() {
         reiniciar.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 QuestionsObj.reset()
-                val intent = Intent(this@Fim, MainActivity::class.java)
+                val intent = Intent(this@FimActivity, MainActivity::class.java)
                 startActivity(intent)
+
             }
         })
+    }
+
+    override fun onBackPressed() {
+        QuestionsObj.reset()
+        val intent = Intent(this@FimActivity, MainActivity::class.java)
+        startActivity(intent)
     }
 }

@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         startButton = findViewById(R.id.buttonStart)
         startButton.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                val intent = Intent(this@MainActivity, Questions::class.java).apply {
+                val intent = Intent(this@MainActivity, QuestionsActivity::class.java).apply {
                     putExtra("QUESTION", 1)
                 }
                 startActivity(intent)

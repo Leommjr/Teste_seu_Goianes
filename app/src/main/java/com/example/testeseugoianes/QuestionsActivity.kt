@@ -7,9 +7,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class Questions : AppCompatActivity() {
+class QuestionsActivity : AppCompatActivity() {
     private lateinit var title: TextView
     private lateinit var desc: TextView
     private lateinit var aut1: CheckBox
@@ -31,7 +32,7 @@ class Questions : AppCompatActivity() {
         val question: Int = intent.getIntExtra("QUESTION", 0)
         setQuestion(question)
         if(QuestionsObj.getQuestion(question).title == "Fim") {
-            val intent = Intent(this@Questions, Fim::class.java).apply {
+            val intent = Intent(this@QuestionsActivity, FimActivity::class.java).apply {
                 putExtra("ACERTOS", (QuestionsObj.acertos))
             }
             startActivity(intent)
@@ -98,10 +99,15 @@ class Questions : AppCompatActivity() {
                     }
                 }
             }
-            val intent = Intent(this@Questions, Questions::class.java).apply {
+            val intent = Intent(this@QuestionsActivity, QuestionsActivity::class.java).apply {
                 putExtra("QUESTION", (QuestionsObj.atual+1))
             }
             startActivity(intent)
         }
+    }
+
+    override fun onBackPressed() {
+        Toast.makeText(this@QuestionsActivity, "Não pode voltar!!\n Termina o questionário.", Toast.LENGTH_SHORT).show()
+
     }
 }

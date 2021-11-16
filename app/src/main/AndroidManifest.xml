@@ -3,18 +3,22 @@
     package="com.example.testeseugoianes">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TesteSeuGoianes">
         <activity
-            android:name=".Fim"
-            android:exported="false" />
+            android:name=".FimActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
         <activity
-            android:name=".Questions"
-            android:exported="false" />
+            android:name=".QuestionsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="true"
